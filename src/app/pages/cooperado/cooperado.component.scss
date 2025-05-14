@@ -1,0 +1,74 @@
+// .cooperado-container {
+//   padding: 0 2rem;
+
+//   .cards {
+//     display: flex;
+//     gap: 1rem;
+//     flex-wrap: wrap;
+//   }
+
+//   .card {
+//     background-color: white;
+//     padding: 1.5rem;
+//     border: 1px solid #ccc;
+//     border-radius: 6px;
+//     flex: 0 0 20%;
+//     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+
+//     h3 {
+//       font-size: 1.1rem;
+//       margin: 0;
+//       color: #333;
+//     }
+
+//     .origin-label {
+//       margin-top: 0;
+//       font-size: 0.8rem;
+//       color: #aaa;
+//       margin-bottom: 1.5rem;
+//     }
+
+//     .content {
+//       .info {
+//         justify-content: space-left;
+//         display: flex;
+//         flex-flow: row;
+         
+//         .icon {
+//           margin-right: 1rem;
+
+//           mat-icon {
+//             height: fit-content;
+//             width: fit-content;
+//             font-size: 2rem;
+//           }
+//         }
+//       }
+
+//       .label {
+//         margin: 0;
+//         font-size: 0.8rem;
+//         color: #aaa;
+//       }
+
+//       .info-value {
+//         margin: 0 0 1.5rem 0;
+//       }
+
+//       .link {
+//         background: none;
+//         border: none;
+//         color: #0f5474;
+//         font-weight: bold;
+//         cursor: pointer;
+//         padding: 0;
+//         margin-top: 0.5rem;
+//         display: inline-block;
+
+//         &:hover {
+//           text-decoration: underline;
+//         }
+//       }
+//     }
+//   }
+// }

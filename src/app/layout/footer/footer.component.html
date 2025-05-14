@@ -1,0 +1,12 @@
+<footer class="app-footer" role="contentinfo">
+  <ng-container *ngFor="let button of buttons">
+    <button
+      type="button"
+      [ngClass]="['footer-btn', button.type]"
+      (click)="button.action()"
+      [attr.aria-label]="button.label"
+    >
+      {{ button.label }}
+    </button>
+  </ng-container>
+</footer>

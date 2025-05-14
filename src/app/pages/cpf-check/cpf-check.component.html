@@ -1,0 +1,33 @@
+<div class="page-container">
+  <app-stepper-form></app-stepper-form>
+
+  <article class="card" aria-labelledby="cpf-title">
+    <h1 class="section-title" id="cpf-title">
+      Informe o CPF do futuro cooperado(a)
+    </h1>
+    <p class="section-subtitle">
+      Se necessário, você poderá duplicar uma conta existente ou pausar e retomar este cadastro futuramente.
+      <br />
+      Digite apenas os números (sem pontos ou traços).
+    </p>
+
+    <section class="form-section">
+      <form [formGroup]="form" (ngSubmit)="onSubmit()" aria-label="Formulário de CPF">
+        <label for="cpf">CPF</label>
+        <div class="form-data">
+          <input
+            id="cpf"
+            formControlName="cpf"
+            placeholder="000.000.000-00"
+            mask="000.000.000-00"
+            aria-describedby="cpf-help"
+          />
+          <button class="primary" type="submit">Consultar por CPF</button>
+        </div>
+        <div id="cpf-help" class="error" *ngIf="errorMessage">
+          {{ errorMessage }}
+        </div>
+      </form>
+    </section>
+  </article>
+</div>

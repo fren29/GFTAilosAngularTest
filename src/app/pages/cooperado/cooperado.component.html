@@ -1,0 +1,5 @@
+<app-cpf-check></app-cpf-check>
+
+<ng-container *ngIf="cards$ | async as cards">
+  <app-card-list [cards]="cards"></app-card-list>
+</ng-container>

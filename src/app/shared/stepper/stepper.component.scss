@@ -1,0 +1,19 @@
+/* 🧼 Remove fundo interno branco do stepper */
+::ng-deep .mat-horizontal-stepper-header {
+  background: transparent !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* 🧼 Garante que a área atrás do stepper não crie um retângulo */
+::ng-deep .mat-step-header .mat-step-label-selected {
+  background: transparent !important;
+}
+
+/* 🧼 Remove qualquer preenchimento lateral que pode gerar bloco */
+::ng-deep .mat-stepper-horizontal {
+  background-color: transparent !important;
+  box-shadow: none;
+}

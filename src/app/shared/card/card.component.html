@@ -1,0 +1,35 @@
+<article class="card" role="region" [attr.aria-label]="data.title.value">
+  <header class="card-header">
+    <h3 class="card-title">{{ data.title.value }}</h3>
+    <small class="card-subtitle" *ngIf="data.title.label">{{ data.title.label }}</small>
+  </header>
+
+  <section class="card-infos" *ngIf="data.infos?.length">
+    <div class="info" *ngFor="let info of data.infos">
+      <mat-icon
+        *ngIf="info.icon"
+        aria-hidden="true"
+        [ngClass]="{ 'success-icon': info.icon === 'check_circle' }"
+      >
+        {{ info.icon }}
+      </mat-icon>
+      <div class="info-text">
+        <p>{{ info.label }}</p>
+        <strong>{{ info.value }}</strong>
+      </div>
+    </div>
+  </section>
+
+  <footer class="card-actions" *ngIf="data.actions?.length">
+    <a
+      *ngFor="let action of data.actions"
+      class="card-action-button"
+      [routerLink]="action.url || null"
+      (click)="action.action?.()"
+      role="button"
+      [attr.aria-label]="action.label"
+    >
+      {{ action.label }}
+    </a>
+  </footer>
+</article>

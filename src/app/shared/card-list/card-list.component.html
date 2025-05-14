@@ -1,0 +1,7 @@
+<div class="cards" *ngIf="cards.length; else empty">
+    <app-card *ngFor="let card of cards" [data]="card"></app-card>
+</div>
+
+<ng-template #empty>
+<p class="empty-state">Nenhum card para exibir.</p>
+</ng-template>

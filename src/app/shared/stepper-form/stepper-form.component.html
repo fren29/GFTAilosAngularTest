@@ -1,0 +1,17 @@
+<div class="stepper">
+    <div
+      class="step"
+      *ngFor="let step of ['Início', 'Documentos', 'Dados cadastrais', 'Admissão']; let i = index"
+      [class.active]="i === currentIndex"
+      [class.completed]="i < currentIndex"
+      (click)="setStep(i)"
+    >
+      <div class="circle">
+        <span *ngIf="i === currentIndex"></span>
+        <span *ngIf="i !== currentIndex"></span>
+      </div>
+      <div class="label">{{ step }}</div>
+      <div class="mat-stepper-horizontal-line" *ngIf="i < 3"></div>
+    </div>
+  </div>
+  

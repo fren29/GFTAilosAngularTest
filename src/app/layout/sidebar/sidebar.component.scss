@@ -1,0 +1,68 @@
+// ✅ SCSS final para a sidebar + ajuste fino dos espaçamentos e alinhamentos
+.sidebar {
+  width: 7rem;
+  min-width: 7rem;
+  height: 100vh;
+  background-color: #0f5474;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+
+  .logo {
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+
+    mat-icon {
+      font-size: 3rem;
+      color: white;
+      display: block;
+      line-height: 1;
+      flex-shrink: 0;
+      width: auto;
+      height: auto;
+    }
+  }
+
+  .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.8rem;
+    width: 100%;
+    flex-grow: 1;
+
+    li {
+      width: auto;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-shrink: 0;
+      box-sizing: border-box;
+
+      mat-icon {
+        color: white;
+        font-size: 2.5rem;
+        line-height: 1;
+        display: block;
+        flex-shrink: 0;
+        width: auto;
+        height: auto;
+        transition: transform 0.2s ease;
+
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+}

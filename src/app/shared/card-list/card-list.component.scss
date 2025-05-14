@@ -1,0 +1,14 @@
+.cards {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 0 2rem;
+    align-items: stretch
+  }
+  
+  .empty-state {
+    font-style: italic;
+    color: #999;
+    padding: 1rem;
+  }
+  
